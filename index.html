@@ -1,590 +1,288 @@
-<!DOCTYPE <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="icon" type="image/x-icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M224 0c13.3 0 24 10.7 24 24V70.1l23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-57 57v76.5l66.2-38.2 20.9-77.8c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4L373 142.2l37.1-21.4c11.5-6.6 26.2-2.7 32.8 8.8s2.7 26.2-8.8 32.8L397 183.8l31.5 8.4c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-77.8-20.9L272 256l66.2 38.2 77.8-20.9c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4L397 328.2l37.1 21.4c11.5 6.6 15.4 21.3 8.8 32.8s-21.3 15.4-32.8 8.8L373 369.8l8.4 31.5c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-20.9-77.8L248 297.6v76.5l57 57c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-23-23V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V441.9l-23 23c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57V297.6l-66.2 38.2-20.9 77.8c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4L75 369.8 37.9 391.2c-11.5 6.6-26.2 2.7-32.8-8.8s-2.7-26.2 8.8-32.8L51 328.2l-31.5-8.4c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l77.8 20.9L176 256l-66.2-38.2L31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4L51 183.8 13.9 162.4c-11.5-6.6-15.4-21.3-8.8-32.8s21.3-15.4 32.8-8.8L75 142.2l-8.4-31.5c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l20.9 77.8L200 214.4V137.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23V24c0-13.3 10.7-24 24-24z'/%3E%3C/svg%3E">
-        <title>Alpehus 75</title>
-        <meta name="description" content="">
+        <title>Aron Sang | Cybersecurity, Software Engineering, and Product Leadership</title>
+        <meta name="description" content="Portfolio for Aron Sang, a senior software engineer, cybersecurity practitioner, and VumbuaLabs Co-founder/COO building secure, practical systems for underserved markets.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Aron Sang | Cybersecurity, Software Engineering, and Product Leadership">
+        <meta property="og:description" content="Senior software engineer, cybersecurity practitioner, and VumbuaLabs Co-founder/COO building secure, practical systems.">
+        <meta property="og:type" content="website">
+        <link rel="icon" type="image/x-icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%2310b981' d='M224 0c13.3 0 24 10.7 24 24V70.1l23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-57 57v76.5l66.2-38.2 20.9-77.8c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4L373 142.2l37.1-21.4c11.5-6.6 26.2-2.7 32.8 8.8s2.7 26.2-8.8 32.8L397 183.8l31.5 8.4c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-77.8-20.9L272 256l66.2 38.2 77.8-20.9c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4L397 328.2l37.1 21.4c11.5 6.6 15.4 21.3 8.8 32.8s-21.3 15.4-32.8 8.8L373 369.8l8.4 31.5c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-20.9-77.8L248 297.6v76.5l57 57c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-23-23V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V441.9l-23 23c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57V297.6l-66.2 38.2-20.9 77.8c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4L75 369.8 37.9 391.2c-11.5 6.6-26.2 2.7-32.8-8.8s-2.7-26.2 8.8-32.8L51 328.2l-31.5-8.4c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l77.8 20.9L176 256l-66.2-38.2L31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4L51 183.8 13.9 162.4c-11.5-6.6-15.4-21.3-8.8-32.8s21.3-15.4 32.8-8.8L75 142.2l-8.4-31.5c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l20.9 77.8L200 214.4V137.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23V24c0-13.3 10.7-24 24-24z'/%3E%3C/svg%3E">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
-    <body class="body">
+    <body>
         <header class="nav-bar" id="header">
             <div class="header-container">
-                <div class="logo-container">
-                    <h1 class="logo">Own Portfolio</h1>
-                </div>
-                <nav class="navbar-container">
+                <a class="logo" href="#home" aria-label="Aron Sang home">Aron Sang</a>
+                <nav class="navbar-container" aria-label="Primary navigation">
                     <ul class="navbar-items">
-                        <li>
-                            <a href="#home" class="nav-link">home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="nav-link">about</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="nav-link">portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#blog-section" class="nav-link">blog</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-link">contacts</a>
-                        </li>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#path" class="nav-link">Cybersecurity Path</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#projects" class="nav-link">Labs</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
             </div>
         </header>
-        <!-- Home section -->
-        <section class="home" id="home">
-            <div class="home-container">
-                <div class="bg-image">
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-media" aria-hidden="true">
                     <img src="images/bg-image.png" alt="">
-                    <div class="main-title">
-                        <h1 class="name-title">
-                            I am Aron Kiprono Sang
-                        </h1>
-                        <p class="name-subtitle">
-                            <span class="typed" id="typed-span" data-typed-items="Software Engineer, Web Developer, Full-stack Developer, Mobile App Developer"> Software Engineer</span>
-                        </p>
-                    </div>
-                    
                 </div>
-            </div>
-        </section>
+                <div class="section-shell hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Senior Software Engineer | Cybersecurity Practitioner | Co-founder/COO</p>
+                        <h1>Building secure, practical systems for underserved markets.</h1>
+                        <p class="hero-lede">
+                            I am Aron Sang, a Nairobi-based senior software engineer, cybersecurity practitioner, and Co-founder/COO building secure, practical systems for small businesses, education teams, and organizations that need reliable technology.
+                        </p>
+                        <p class="typed-line">Portfolio focus: <span id="typed-span" data-typed-items="Cybersecurity projects, Software engineering leadership, Product operations, AI-enabled tools, Small-business systems">Cybersecurity projects</span></p>
+                        <div class="hero-actions">
+                            <a class="button primary" href="#projects"><i class="fas fa-shield-alt" aria-hidden="true"></i> View security projects</a>
+                            <a class="button secondary" href="resume/Aron_Sang_Cybersecurity_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-download" aria-hidden="true"></i> Download resume</a>
+                        </div>
+                    </div>
+                    <aside class="hero-card" aria-label="Career snapshot">
+                        <img class="profile-photo" src="images/aron-passport.png" alt="Aron Sang">
+                        <div>
+                            <h2>Three connected pillars</h2>
+                            <p>Cybersecurity practice, production software engineering, and founder-level product leadership through VumbuaLabs initiatives.</p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
 
-        <!-- about section -->
-        <section class="about" id="about">
-            <div class="section-title">
-                <h2 class="title-heading">About Me</h2>
-            </div>
-            <div class="about-container">    
-                <div class="left-about">
-                    <div class="top-left-about">
-                        <div class="my-avi">
-                            <img src="images/aron-3.png" alt="">
-                        </div>
-                        <div class="my-details">
-                            <p><span class="title-s">Name: </span> <span>Aron Kiprono Sang</span></p>
-                            <p><span class="title-s">Profile: </span> <span>Software Engineer</span></p>
-                            <p><span class="title-s">Email: </span> <span>kipronoaron47@gmail.com</span></p>
-                            <p><span class="title-s">Phone: </span> <span>+254 754210383</span></p>
-                        </div>
+            <section class="statement-section" id="statement">
+                <div class="section-shell statement-panel">
+                    <div>
+                        <p class="eyebrow">Professional statement</p>
+                        <h2 class="section-heading">Protecting organizations through secure, reliable systems.</h2>
                     </div>
-                    <div class="my-skills">
-                        <p class="title-s">Skill</p>
-                        <div class="progress-bars">
-                            <div class="progress-bar">
-                                <p class="prog-title">Html5 <span class="prog text">85%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="html"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">CSS <span class="prog text">70%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="css"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">Javascript <span class="prog text">68%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="js"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">PHP <span class="prog text">70%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="php"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">Laravel <span class="prog text">88%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="laravel"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="prog-title">Flutter <span class="prog text">67%</span></p>
-                                <div class="progress-con">
-                                    <div class="progress">
-                                        <span class="flutter"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <h1 class="bio-header">About me</h1>
-                    <div class="my-bio">
-                        <p class="bio"> 
-                            <strong>Software Engineer | Fullstack Developer</strong><br/>
-                            I am a skilled software engineer with passion in web development. With over two years of experience in the industry i possess proficient skills in Full-stack
-                            development a proven record of producing quality software solutions.<br/>
-
-                            <strong>Professional Experience</strong><br/>
-                            <ul class="bio">
-                                <li><strong>Software Engineer at Kenya Airlift Program (April 2023-Present): 
-                                </strong>Developing technical solutions, gathering business requirements
-                                testing systems, enahncing existing systems and solving technical production issues.</li>
-                                <li><strong>Software Developer (2022-2023):
-                                </strong>Participated in development and testing of web and mobile applications. I gained valuable skills in full stack development and mobile development. </li>
-                            </ul>
-                            <p class="bio">
-                                Participated in the devlopment
-                            </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-
-        <!-- portfolio section -->
-        <section class="portfolio" id="portfolio">
-            <div class="section-title">
-                <h2 class="title-heading">My Work</h2>
-            </div>
-            <p class="port-text">Here are some of the work I have done</p>
-            <div class="portfolios">
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<div class="image">
-						<img src="images/hero-bg.jpg" alt="">
-					</div>
-					<div class="hover-items">
-						<h3>Project Source</h3>
-						<div class="icons">
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-github" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-behance" aria-hidden="true"></i>
-							</a>
-							<a href="" target="_blank" class="icon">
-								<i class="fab fa-youtube" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-        </section>
-        <!-- counters section-->
-        <section class="counters-section">
-            <div class="overlay"></div>
-            <div class="section-counter">
-                
-                <div class="counters">
-                    <div class="counter">
-                        <div class="counter-icon">
-                            <span class="circle">
-                                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="counter-content">
-                            <p class="counter-num" data-value="25"></p>
-                            <span class="counter-text">Completed <br/> Projects</span>
-                        </div>
-                    </div>
-                    <div class="counter">
-                        <div class="counter-icon">
-                            <span class="circle">
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="counter-content">
-                            <p class="counter-num" data-value="30"></p>
-                            <span class="counter-text">Happy <br/> clients</span>
-                        </div>
-                    </div>
-                    <div class="counter">
-                        <div class="counter-icon">
-                            <span class="circle">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="counter-content">
-                            <p class="counter-num" data-value="200"><span>+</span></p>
-                            <span class="counter-text">Customer <br/> Reviews</span>
-                        </div>
-                    </div>
-                    <div class="counter">
-                        <div class="counter-icon">
-                            <span class="circle">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="counter-content">
-                            <p class="counter-num" data-value="3"><span>+</span></p>
-                            <span class="counter-text">Years of <br/> Experience</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- blog section -->
-        <section class="blog-section" id="blog-section">
-            <div class="section-title">
-                <h2 class="title-heading">My Blogs</h2>
-            </div>
-            <div class="blogs">
-                <div class="blog">
-                    <img src="images/hero-bg.jpg" alt="">
-                    <div class="blog-text">
-                        <h4>
-                            My programming journey
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Doloribus natus voluptas, eos obcaecati recusandae amet?
-                        </p>
-                        <div class="btn-con blog-link">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Read More</span>
-                                <span class="btn-icon"><i class="fa fa-book" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="images/hero-bg.jpg" alt="">
-                    <div class="blog-text">
-                        <h4>
-                            How it feels being a junior developer amongst senior exeperienced
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Doloribus natus voluptas, eos obcaecati recusandae amet?
-                        </p>
-                        <div class="btn-con">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Read More</span>
-                                <span class="btn-icon"><i class="fa fa-book" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="images/hero-bg.jpg" alt="">
-                    <div class="blog-text">
-                        <h4>
-                            You can never lean a language 100%, my take
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Doloribus natus voluptas, eos obcaecati recusandae amet?
-                        </p>
-                        <div class="btn-con">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Read More</span>
-                                <span class="btn-icon"><i class="fa fa-book" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="images/hero-bg.jpg" alt="">
-                    <div class="blog-text">
-                        <h4>
-                            Does working enironment affect productivity?
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Doloribus natus voluptas, eos obcaecati recusandae amet?
-                        </p>
-                        <div class="btn-con">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Read More</span>
-                                <span class="btn-icon"><i class="fa fa-book" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="images/hero-bg.jpg" alt="">
-                    <div class="blog-text">
-                        <h4>
-                            Getting proficient with Flutter
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Doloribus natus voluptas, eos obcaecati recusandae amet?
-                        </p>
-                        <div class="btn-con">
-                            <a href="" class="main-btn">
-                                <span class="btn-text">Read More</span>
-                                <span class="btn-icon"><i class="fa fa-book" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact section -->
-        <section class="contact" id="contact">
-            
-            <div class="overlay"></div>
-            <div class="contact-content-con">
-                <div class="left-contact">
-                    <h4>Contact me here</h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Doloribus natus voluptas, eos obcaecati recusandae amet?
+                    <p class="statement-copy">
+                        I am a senior software engineer transitioning into cybersecurity, with a strong foundation in programming, backend systems, Linux infrastructure, troubleshooting, and production support. I am passionate about protecting organizations by helping build secure, reliable systems and reducing risks before they affect users or business operations. After completing the Google Cybersecurity Certificate, I am building a portfolio that demonstrates practical security analysis, documentation, detection, and remediation skills with the technical depth of a software engineer.
                     </p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                Nairobi, Kenya
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                kipronoaron47@gmail.com
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
-                                +254 712345678
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-language" aria-hidden="true"></i>
-                                English, Swahili
-                            </div>
-                        </div>
+                </div>
+            </section>
+
+            <section class="about-section" id="path">
+                <div class="section-shell two-column">
+                    <div>
+                        <p class="eyebrow">Cybersecurity path</p>
+                        <h2 class="section-heading">A practical security pivot, grounded in real systems.</h2>
+                        <p class="section-lede">
+                            My current direction is cybersecurity, with the Google Cybersecurity Certificate completed and CompTIA Security+ planned as the next certification target. My portfolio now includes completed artifacts that demonstrate security skills, knowledge, and practical analysis.
+                        </p>
                     </div>
-                    <div class="contact-icons">
-                        <div class="contact-icon">
-                            <a class="socials" href="www.facebook.com" target="_blank">
-                                <i class="fab fa-facebook social" aria-hidden="true"></i>
-                            </a>
-                            <a class="socials" href="" target="_blank">
-                                <i class="fab fa-twitter social" aria-hidden="true"></i>
-                            </a>
-                            <a class="socials" href="" target="_blank">
-                                <i class="fab fa-github social" aria-hidden="true"></i>
-                            </a>
-                            <a class="socials" href="" target="_blank">
-                                <i class="fab fa-youtube social" aria-hidden="true"></i>
-                            </a>
+                    <div class="path-list">
+                        <article class="path-item">
+                            <span class="path-icon"><i class="fas fa-user-shield" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Certificate completed</h3>
+                                <p>Google Cybersecurity Certificate completed, with portfolio artifacts prepared for audit, vulnerability assessment, incident response, SIEM/IDS, network analysis, and web application security.</p>
+                                <a class="inline-link" href="https://coursera.org/share/c978c609882ae992228275b2e5f21e63" target="_blank" rel="noopener">View certificate credential</a>
+                            </div>
+                        </article>
+                        <article class="path-item">
+                            <span class="path-icon"><i class="fas fa-certificate" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Certification goal</h3>
+                                <p>Preparing for CompTIA Security+ as a structured milestone toward cybersecurity roles.</p>
+                            </div>
+                        </article>
+                        <article class="path-item">
+                            <span class="path-icon"><i class="fas fa-server" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Security-relevant base</h3>
+                                <p>Hands-on experience with Linux VPS migration, monitoring, root cause analysis, API integrations, and production uptime.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills-section" id="skills">
+                <div class="section-shell">
+                    <p class="eyebrow">Core capabilities</p>
+                    <h2 class="section-heading">Where software engineering meets security readiness.</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>Backend and APIs</h3>
+                            <p>PHP/Laravel, Python, JavaScript, REST APIs, payment integrations, relational schema design, and production troubleshooting.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Infrastructure</h3>
+                            <p>Linux VPS administration, Nginx, Apache, Git, GitHub, CI/CD, monitoring, deployments, and service restoration.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Security direction</h3>
+                            <p>Cybersecurity fundamentals, incident response mindset, secure systems thinking, access-aware development, and documentation discipline.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Leadership</h3>
+                            <p>Code reviews, engineering standards, mentoring, async collaboration, stakeholder alignment, and architecture discussions.</p>
                         </div>
                     </div>
                 </div>
-                <div class="right-contact">
-                    <form action="phpmailer.php" class="contact-form" method="POST">
-                        <div class="input-control input-n-e">
-                            <input type="text" placeholder="YOUR NAME" name="name" required>
-                            <input type="email" placeholder="YOUR EMAIL" name="email" required>
+            </section>
+
+            <section class="foundation-section" id="foundation">
+                <div class="section-shell">
+                    <div class="section-intro split-intro">
+                        <div>
+                            <p class="eyebrow">Security engineering foundation</p>
+                            <h2 class="section-heading">Technical depth from production software work.</h2>
                         </div>
-                        <div class="input-control">
-                            <input type="text" placeholder="ENTER SUBJECT" name="subject" required>
-                        </div>
-                        <div class="input-control">
-                            <textarea name="message" id="" cols="15" rows="8" placeholder="Message here..."></textarea>
-                        </div>
-                        <div class="submit-btn">
-                            <button type="submit" class="main-btn">
-                                <span class="btn-text">Submit</span>
-                                <span class="btn-icon">
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                        <p class="section-lede compact">I avoided duplicating beginner Linux, SQL, and Python labs because those skills are already grounded in hands-on software engineering, backend systems, and VPS operations.</p>
+                    </div>
+                    <div class="foundation-grid">
+                        <article class="foundation-item">
+                            <h3>Linux VPS and web-root hardening</h3>
+                            <p>Server administration, deployment troubleshooting, file exposure review, Nginx/Apache context, and practical hosting hygiene for PHP/MySQL applications.</p>
+                        </article>
+                        <article class="foundation-item">
+                            <h3>SQL and relational investigation</h3>
+                            <p>Schema design, query filtering, database normalization, payment/accountability workflows, and evidence-driven data review.</p>
+                        </article>
+                        <article class="foundation-item">
+                            <h3>Python and automation</h3>
+                            <p>Programming background that supports log parsing, repeatable checks, data cleanup, reporting, and security workflow automation.</p>
+                        </article>
+                        <article class="foundation-item">
+                            <h3>Secure backend development</h3>
+                            <p>Authentication flows, API integrations, code review, monitoring, incident response, documentation, and production support.</p>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="experience-section" id="experience">
+                <div class="section-shell">
+                    <div class="section-intro">
+                        <p class="eyebrow">Experience highlights</p>
+                        <h2 class="section-heading">Production ownership that translates well into cybersecurity.</h2>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <div class="timeline-meta">Jan 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Senior Software Engineer / Technical Lead</h3>
+                                <p class="company">The International Scholars Program, Nairobi</p>
+                                <p>Architect and maintain backend systems serving 3,000+ users with 99.9% uptime, lead a team of 4 engineers, and manage incident response, monitoring, code review, and delivery standards.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="timeline-meta">Mar 2025 - Nov 2025</div>
+                            <div class="timeline-content">
+                                <h3>Software Development Consultant</h3>
+                                <p class="company">Pivot Plus Solutions, Remote</p>
+                                <p>Provided technical advisory for a PHP web application, database design, REST architecture, developer mentoring, and integrations with Stripe, PayPal, KCB Buni, and Calendly.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="timeline-meta">Apr 2023 - Dec 2024</div>
+                            <div class="timeline-content">
+                                <h3>Software Engineer</h3>
+                                <p class="company">The International Scholars Program, Nairobi</p>
+                                <p>Built Laravel applications supporting 1,000+ users, including loan and school application modules that reduced manual processing time by 40%.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item">
+                            <div class="timeline-meta">Jan 2022 - Dec 2022</div>
+                            <div class="timeline-content">
+                                <h3>Software Developer</h3>
+                                <p class="company">Speack Solutions, Kericho</p>
+                                <p>Built cooperative management workflows for farmer registration, payroll, loans, weight tracking, reporting, SMS notifications, and offline-sync field data collection.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrics-section" aria-label="Career metrics">
+                <div class="section-shell metrics-grid">
+                    <div class="metric-card">
+                        <strong class="counter-num" data-value="99">0</strong>
+                        <span>Percent uptime target sustained across production systems.</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong class="counter-num" data-value="3000">0</strong>
+                        <span>Users supported across active production systems.</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong class="counter-num" data-value="40">0</strong>
+                        <span>Percent reduction in manual processing through automation.</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong class="counter-num" data-value="4">0</strong>
+                        <span>Engineers mentored through reviews and delivery standards.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products-section" id="products">
+                <div class="section-shell">
+                    <div class="section-intro split-intro">
+                        <div>
+                            <p class="eyebrow">Product leadership</p>
+                            <h2 class="section-heading">VumbuaLabs initiatives for practical, underserved workflows.</h2>
+                        </div>
+                        <p class="section-lede compact">As Co-founder and COO of <a class="inline-link inline-link-text" href="https://vumbualabs.com" target="_blank" rel="noopener">VumbuaLabs Ltd</a>, I help shape product direction, operations, execution, and delivery for practical technology built around problems that were historically hard to solve manually.</p>
+                    </div>
+                    <div class="product-grid" id="product-grid" aria-live="polite"></div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects">
+                <div class="section-shell">
+                    <div class="section-intro split-intro">
+                        <div>
+                            <p class="eyebrow">Completed cybersecurity projects</p>
+                            <h2 class="section-heading">Cybersecurity evidence across audit, detection, response, and secure web systems.</h2>
+                        </div>
+                        <p class="section-lede compact">These reports use fictional or sanitized scenarios to demonstrate cybersecurity knowledge while connecting back to the secure product ownership needed in real software and startup environments.</p>
+                    </div>
+                    <div class="project-grid" id="project-grid" aria-live="polite"></div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="section-shell contact-grid">
+                    <div>
+                        <p class="eyebrow">Contact</p>
+                        <h2 class="section-heading">Open to cybersecurity conversations, security labs, and software roles with strong security ownership.</h2>
+                        <p class="section-lede">I am based in Nairobi, Kenya and work well in remote-friendly engineering environments.</p>
+                    </div>
+                    <div class="contact-panel">
+                        <a class="contact-link" href="mailto:kipronoaron47@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> kipronoaron47@gmail.com</a>
+                        <a class="contact-link" href="https://github.com/AronKiprono" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> github.com/AronKiprono</a>
+                        <a class="contact-link" href="https://www.linkedin.com/in/aron-sang" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> linkedin.com/in/aron-sang</a>
+                        <a class="contact-link" href="https://coursera.org/share/c978c609882ae992228275b2e5f21e63" target="_blank" rel="noopener"><i class="fas fa-certificate" aria-hidden="true"></i> Google Cybersecurity Certificate</a>
+                        <a class="button primary full-width" href="resume/Aron_Sang_Cybersecurity_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-download" aria-hidden="true"></i> Download resume</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <footer>
-            <p>&#169; alactech </p>
+            <p>&copy; 2026 Aron Sang. Built for GitHub Pages.</p>
         </footer>
-        
-        <script src="scripts/app.js" async defer></script>
+
+        <script src="scripts/project-labs.js"></script>
+        <script src="scripts/product-projects.js"></script>
+        <script src="scripts/app.js"></script>
     </body>
 </html>
