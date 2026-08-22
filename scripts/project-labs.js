@@ -1,95 +1,85 @@
 window.portfolioProjects = [
   {
-    title: "Professional Statement",
-    category: "Portfolio foundation",
-    status: "In progress",
-    summary: "A concise cybersecurity statement that connects my software engineering background with my goal of protecting organizations through secure, reliable systems.",
-    tools: ["Communication", "Career positioning", "Cybersecurity values"],
-    outcome: "Provides the narrative foundation for recruiters reviewing my transition into cybersecurity.",
+    title: "Authentication Monitoring and Small-Business Web App Security Hardening",
+    category: "Authentication security",
+    status: "Completed",
+    summary: "A sanitized, real-world-inspired case study for a PHP/MySQL web application hosted in a cPanel/VPS-style environment with a small development team and no dedicated cybersecurity function.",
+    tools: ["PHP", "MySQL", "Audit logging", "Session security", "Web-root hardening"],
+    outcome: "Demonstrates login tracking, password reset visibility, session metadata capture, bounded activity summaries, and practical remediation for small-business web apps.",
     links: {
-      statement: "#statement"
+      report: "portfolio-documents/authentication-monitoring-hardening.pdf"
     },
     featured: true
   },
   {
-    title: "Security Audit",
-    category: "Governance and controls",
-    status: "Planned",
-    summary: "A future portfolio artifact for reviewing an organization's assets, risks, controls, and security posture using a structured audit approach.",
-    tools: ["Risk review", "Controls", "Documentation"],
-    outcome: "Will demonstrate how I identify gaps and communicate practical security recommendations.",
-    links: {},
+    title: "SIEM / IDS Alert Investigation Report",
+    category: "Detection and response",
+    status: "Completed",
+    summary: "A SOC-style investigation of a malware command-and-control and possible exfiltration alert using IDS telemetry, SIEM correlation, SPL-style hunting, and triage reasoning.",
+    tools: ["SIEM", "IDS", "Suricata", "Splunk-style queries", "Incident triage"],
+    outcome: "Shows alert review, evidence correlation, severity assessment, true-positive reasoning, and response recommendations.",
+    links: {
+      report: "portfolio-documents/siem-ids-alert-investigation-report.pdf"
+    },
     featured: true
   },
   {
-    title: "Network Structure and Security Analysis",
+    title: "Internal Security Audit Report",
+    category: "Governance, risk, and controls",
+    status: "Completed",
+    summary: "A structured internal security audit for a fictional cross-border e-commerce and logistics company, covering assets, controls, risk posture, and remediation planning.",
+    tools: ["Risk assessment", "Controls review", "Security governance", "Audit reporting"],
+    outcome: "Demonstrates executive communication, control-gap identification, risk scoring, and strategic security roadmap development.",
+    links: {
+      report: "portfolio-documents/internal-security-audit-report.pdf"
+    },
+    featured: true
+  },
+  {
+    title: "Vulnerability Assessment Report",
+    category: "Vulnerability management",
+    status: "Completed",
+    summary: "A technical vulnerability assessment for a fictional small business with web portals, databases, cloud files, endpoints, and manual operational workflows.",
+    tools: ["Asset inventory", "Risk rating", "Remediation planning", "Security assessment"],
+    outcome: "Shows how to identify, prioritize, and explain technical vulnerabilities in business-impact terms.",
+    links: {
+      report: "portfolio-documents/vulnerability-assessment-report.pdf"
+    },
+    featured: true
+  },
+  {
+    title: "Network Traffic Analysis Report",
     category: "Network security",
-    status: "Planned",
-    summary: "A planned analysis of network structure, traffic flow, and security considerations for a sample environment.",
-    tools: ["Network analysis", "Security design", "Technical writing"],
-    outcome: "Will show how I reason about network exposure, segmentation, and defensive improvements.",
-    links: {},
-    featured: false
-  },
-  {
-    title: "Linux File Permissions Lab",
-    category: "Linux security",
-    status: "Planned",
-    summary: "A command-line lab for using Linux permissions to manage access and apply least-privilege thinking.",
-    tools: ["Linux", "File permissions", "Access control"],
-    outcome: "Will demonstrate practical security administration with clear command documentation.",
-    links: {},
-    featured: false
-  },
-  {
-    title: "SQL Query Filtering Lab",
-    category: "Data analysis",
-    status: "Planned",
-    summary: "A future artifact for applying SQL filters to investigate security-relevant records and narrow event data.",
-    tools: ["SQL", "Filtering", "Investigation"],
-    outcome: "Will show careful querying, evidence gathering, and repeatable analysis.",
-    links: {},
-    featured: false
-  },
-  {
-    title: "Small Business Vulnerability Identification",
-    category: "Vulnerability analysis",
-    status: "Planned",
-    summary: "A planned scenario-based review for identifying vulnerabilities and prioritizing improvements for a small business environment.",
-    tools: ["Vulnerability identification", "Risk prioritization", "Recommendations"],
-    outcome: "Will connect security findings to practical business risk reduction.",
-    links: {},
+    status: "Completed",
+    summary: "An investigation of suspicious DNS, HTTP, and TCP activity from a fictional workstation showing possible compromise, command-and-control behavior, and reconnaissance.",
+    tools: ["DNS analysis", "HTTP analysis", "TCP behavior", "Network segmentation"],
+    outcome: "Demonstrates protocol reasoning, traffic interpretation, containment recommendations, and network-security communication.",
+    links: {
+      report: "portfolio-documents/network-traffic-analysis-report.pdf"
+    },
     featured: false
   },
   {
     title: "Incident Handler's Journal",
     category: "Incident response",
-    status: "Planned",
-    summary: "A journal for documenting incident observations, response steps, lessons learned, and follow-up actions.",
-    tools: ["Incident response", "Documentation", "Root cause analysis"],
-    outcome: "Will demonstrate disciplined incident documentation and security communication habits.",
-    links: {},
-    featured: true
-  },
-  {
-    title: "Security Text File Parsing",
-    category: "Security automation",
-    status: "Planned",
-    summary: "A future parsing exercise for importing and analyzing text data in a security-related scenario.",
-    tools: ["Python", "Parsing", "Security data"],
-    outcome: "Will connect my programming strengths to repeatable cybersecurity analysis tasks.",
-    links: {},
+    status: "Completed",
+    summary: "A structured incident journal for a suspicious login and phishing investigation involving account takeover, mailbox forwarding rules, and employee phishing exposure.",
+    tools: ["Incident journal", "Timeline analysis", "Containment", "Lessons learned"],
+    outcome: "Shows disciplined incident documentation, the 5 W's, response tracking, and follow-up monitoring.",
+    links: {
+      report: "portfolio-documents/incident-handlers-journal.pdf"
+    },
     featured: false
   },
   {
-    title: "Resume Revision",
-    category: "Career materials",
-    status: "In progress",
-    summary: "An updated resume that reflects professional software engineering experience and aligns public links with the AronKiprono brand.",
-    tools: ["Resume", "GitHub", "LinkedIn", "Career positioning"],
-    outcome: "Keeps my application materials aligned with this portfolio and future cybersecurity goals.",
+    title: "Web Application Security Review",
+    category: "Application security",
+    status: "Completed",
+    summary: "An OWASP-style non-intrusive review of fictional customer and admin portals, including exposed backups, direct file access, session handling, CSRF, IDOR, and upload risks.",
+    tools: ["OWASP Top 10", "Secure deployment", "Access control", "File upload review"],
+    outcome: "Demonstrates web application risk mapping, finding writeups, and remediation notes for PHP/MySQL business systems.",
     links: {
-      resume: "resume/Aron_Sang_Senior_SWE_Resume.pdf"
+      report: "portfolio-documents/web-application-security-review.pdf"
     },
     featured: false
   }

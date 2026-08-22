@@ -247,6 +247,7 @@ a {
 .hero-card,
 .contact-panel,
 .skill-card,
+.product-card,
 .project-card,
 .metric-card {
     border: 1px solid var(--line);
@@ -273,6 +274,7 @@ a {
 .path-item h3,
 .skill-card h3,
 .timeline-content h3,
+.product-card h3,
 .project-card h3 {
     margin: 0;
     line-height: 1.2;
@@ -282,6 +284,7 @@ a {
 .path-item p,
 .skill-card p,
 .timeline-content p,
+.product-card p,
 .project-card p,
 .contact-panel p {
     color: var(--muted);
@@ -290,7 +293,9 @@ a {
 .about-section,
 .statement-section,
 .skills-section,
+.foundation-section,
 .experience-section,
+.products-section,
 .projects-section,
 .contact-section {
     position: relative;
@@ -299,7 +304,9 @@ a {
 }
 
 .skills-section,
-.projects-section {
+.products-section,
+.projects-section,
+.foundation-section {
     background: var(--bg-soft);
 }
 
@@ -359,6 +366,25 @@ a {
     border-radius: 8px;
 }
 
+.inline-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--accent-strong);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+    text-decoration: underline;
+}
+
+.inline-link-text {
+    display: inline;
+    margin-top: 0;
+}
+
 .path-icon {
     width: 48px;
     height: 48px;
@@ -370,6 +396,8 @@ a {
 }
 
 .skills-grid,
+.foundation-grid,
+.product-grid,
 .project-grid,
 .metrics-grid {
     display: grid;
@@ -379,9 +407,31 @@ a {
 }
 
 .skill-card,
+.foundation-item,
+.product-card,
 .project-card,
 .metric-card {
     padding: 24px;
+}
+
+.foundation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.foundation-item {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.foundation-item h3 {
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+.foundation-item p {
+    margin: 0;
+    color: var(--muted);
 }
 
 .section-intro {
@@ -452,6 +502,40 @@ a {
 
 .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.product-details {
+    display: grid;
+    gap: 12px;
+    margin: 18px 0 0;
+}
+
+.product-details div {
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+}
+
+.product-details dt {
+    margin-bottom: 4px;
+    color: var(--accent-strong);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.product-details dd {
+    margin: 0;
+    color: var(--muted);
 }
 
 .project-card.featured {
@@ -597,6 +681,8 @@ footer {
     }
 
     .skills-grid,
+    .foundation-grid,
+    .product-grid,
     .metrics-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -619,7 +705,9 @@ footer {
     .about-section,
     .statement-section,
     .skills-section,
+    .foundation-section,
     .experience-section,
+    .products-section,
     .projects-section,
     .contact-section {
         padding: 64px 0;
@@ -630,6 +718,8 @@ footer {
     }
 
     .skills-grid,
+    .foundation-grid,
+    .product-grid,
     .project-grid,
     .metrics-grid {
         grid-template-columns: 1fr;
@@ -638,6 +728,8 @@ footer {
     .timeline-item,
     .statement-panel,
     .skill-card,
+    .foundation-item,
+    .product-card,
     .project-card,
     .metric-card,
     .contact-panel {

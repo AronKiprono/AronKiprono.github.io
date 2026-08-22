@@ -107,4 +107,50 @@ function renderProjects() {
     .join("");
 }
 
+function renderProductProjects() {
+  const grid = document.getElementById("product-grid");
+  const products = window.productProjects || [];
+
+  if (!grid) return;
+
+  grid.innerHTML = products
+    .map((product) => {
+      const skillTags = product.skills.map((skill) => `<span>${skill}</span>`).join("");
+
+      return `
+        <article class="product-card">
+          <div class="project-topline">
+            <span>${product.status}</span>
+            <strong>${product.title}</strong>
+          </div>
+          <h3>${product.title}</h3>
+          <p>${product.summary}</p>
+          <dl class="product-details">
+            <div>
+              <dt>Problem</dt>
+              <dd>${product.problem}</dd>
+            </div>
+            <div>
+              <dt>Audience</dt>
+              <dd>${product.audience}</dd>
+            </div>
+            <div>
+              <dt>Impact area</dt>
+              <dd>${product.impact}</dd>
+            </div>
+            <div>
+              <dt>Security relevance</dt>
+              <dd>${product.security}</dd>
+            </div>
+          </dl>
+          <div class="tag-list">${skillTags}</div>
+          <div class="project-links">
+            <a href="${product.url}" target="_blank" rel="noopener">Visit product</a>
+          </div>
+        </article>`;
+    })
+    .join("");
+}
+
+renderProductProjects();
 renderProjects();
