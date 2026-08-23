@@ -1,17 +1,5 @@
 window.portfolioProjects = [
   {
-    title: "Authentication Monitoring and Small-Business Web App Security Hardening",
-    category: "Authentication security",
-    status: "Completed",
-    summary: "A sanitized, real-world-inspired case study for a PHP/MySQL web application hosted in a cPanel/VPS-style environment with a small development team and no dedicated cybersecurity function.",
-    tools: ["PHP", "MySQL", "Audit logging", "Session security", "Web-root hardening"],
-    outcome: "Demonstrates login tracking, password reset visibility, session metadata capture, bounded activity summaries, and practical remediation for small-business web apps.",
-    links: {
-      report: "portfolio-documents/authentication-monitoring-hardening.pdf"
-    },
-    featured: true
-  },
-  {
     title: "SIEM / IDS Alert Investigation Report",
     category: "Detection and response",
     status: "Completed",

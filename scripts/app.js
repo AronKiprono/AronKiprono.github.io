@@ -88,7 +88,7 @@ function renderProjects() {
     .map((project) => {
       const toolTags = project.tools.map((tool) => `<span>${tool}</span>`).join("");
       const links = Object.entries(project.links || {})
-        .map(([label, href]) => `<a href="${href}"${href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${label}</a>`)
+        .map(([label, href]) => `<a href="${href}" target="_blank" rel="noopener">${label}</a>`)
         .join("");
 
       return `
