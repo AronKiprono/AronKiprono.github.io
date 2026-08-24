@@ -292,6 +292,7 @@ a {
 
 .about-section,
 .statement-section,
+.journey-section,
 .skills-section,
 .foundation-section,
 .experience-section,
@@ -313,6 +314,33 @@ a {
 .statement-section {
     background: var(--bg-soft);
     padding: 76px 0;
+}
+
+.journey-section {
+    background: var(--bg);
+}
+
+.journey-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1.28fr);
+    gap: 42px;
+    align-items: start;
+    padding: 34px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.journey-copy {
+    display: grid;
+    gap: 18px;
+}
+
+.journey-copy p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.8;
 }
 
 .statement-panel {
@@ -670,6 +698,7 @@ footer {
     .hero-grid,
     .two-column,
     .statement-panel,
+    .journey-panel,
     .split-intro,
     .contact-grid,
     .timeline-item {
@@ -704,6 +733,7 @@ footer {
 
     .about-section,
     .statement-section,
+    .journey-section,
     .skills-section,
     .foundation-section,
     .experience-section,
@@ -727,6 +757,7 @@ footer {
 
     .timeline-item,
     .statement-panel,
+    .journey-panel,
     .skill-card,
     .foundation-item,
     .product-card,
