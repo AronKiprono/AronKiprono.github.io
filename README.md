@@ -5,7 +5,7 @@ Static GitHub Pages portfolio for Aron Sang, positioning cybersecurity practice,
 ## Focus
 
 - Google Cybersecurity Certificate completed.
-- CompTIA Security+ preparation as the next certification goal.
+- CompTIA Security+ certified, with a public Credly verification link.
 - Production software engineering experience in backend systems, APIs, Linux VPS administration, incident response, monitoring, and technical leadership.
 - Co-founder/COO experience with VumbuaLabs Ltd (`https://vumbualabs.com`), including public-safe product case studies for SmartDuka and Markisha.
 - Completed cybersecurity portfolio reports covering audit, vulnerability assessment, network analysis, SIEM/IDS alert investigation, incident response, and web application security review.
